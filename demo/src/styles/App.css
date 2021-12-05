@@ -1,0 +1,134 @@
+h1{
+  text-align:center;
+}
+html{
+  box-sizing:border-box;
+}
+*,
+*:before,
+*:after{
+  box-sizing:inherit;
+}
+body{
+  margin:0;
+  padding:0;
+  line-height:1;
+  font-family:"Roboto",sans-serif;
+  color:blue;
+  background-color:antiquewhite;
+}
+.header{
+  border-bottom:1px solid  aquamarine;
+  background-color:pink;
+  box-shadow:0 1px 2px red;
+  height:34px;
+  width:100%;
+}
+  header.img{
+    width: 24px;
+}
+nav{
+  height:100%;
+  max-width:922px;
+  display:flex;
+  align-items:center;
+  margin:auto;
+}
+
+.content{
+  display:flex;
+  max-width:922px;
+  margin:auto;
+}
+.sidebar{
+  user-select:none;
+  width:266px;
+  height:100vh;
+  padding-top:74px;
+  border-right:1px solid black;
+  background-color:burlywood;
+}
+  sidebar.div{
+    margin-bottom: 10px;
+    cursor:pointer;
+    padding:15px;
+  }
+    sidebar.active{
+      background-color:pink;
+
+    }
+    .icon{
+      margin-right:10px;
+    }
+
+.tasks{
+  background-color:aliceblue;
+  height:100vh;
+  width:calc(922px-266px);
+  padding:74px 20px 0;
+}
+task.add-task-btn{
+  cursor:pointer;
+}
+
+.plus{
+  color:red;
+  font-size:18px;
+}
+.task.add-task-text{
+    color:red;
+    font-size:24px;
+    margin-left:15px;
+  }
+  .add-task-dialog{
+    margin-top:10px;
+  }
+  input{
+    width:100%;
+    border:1px solid white;
+    background-color:white;
+    border-radius:3px;
+    height:35px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .add-task-action-container{
+    margin-top:10px;
+    display:flex;
+    justify-content: space-between;
+  }
+
+.add-btn{
+  background-color:red;
+  color:white;
+  border:1px solid transparent;
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 13px;
+  padding:6px 12px 7px 12px;
+  border-radius: 3px !important;
+ 
+}
+.cancel-btn{
+  all:unset;
+  color:grey;
+  cursor:pointer;
+  font-size:14px;
+}
+
+
+  task.task-items-container{
+    margin-top:40px;
+    padding:0 20px;
+  }
+   task.task-item{
+      display:flex;
+      justify-content:space-between;
+   }
+      task:not(:last-child){
+        border-bottom:1px solid aqua
+      }
+    .plus{
+      color:red;
+      padding:10px;
+    }
